@@ -35,5 +35,6 @@
       <Text fill="WHITE" layoutX="56.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
       <Text fill="WHITE" layoutX="53.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
       <Text fill="WHITE" layoutX="53.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course :" />
+      <Button layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#gototeachers" text="Course Teachers" />
     </children>
 </AnchorPane>

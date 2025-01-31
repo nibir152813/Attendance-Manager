@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.sql.*;
+import javafx.event.ActionEvent;
 
 public class StudentController {
     @FXML
@@ -147,5 +148,9 @@ public class StudentController {
         idField.clear();
         nameField.clear();
         courseField.clear();
+    }
+
+    @FXML
+    private void gototeachers(ActionEvent event) {
     }
 }
