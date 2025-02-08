@@ -6,8 +6,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.sql.*;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class StudentController {
+
     @FXML
     private TextField idField, nameField, courseField;
 
@@ -151,6 +156,13 @@ public class StudentController {
     }
 
     @FXML
-    private void gototeachers(ActionEvent event) {
+    private void gototeachers(ActionEvent event) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("Attendance.fxml")); // Ensure correct FXML file
+
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow(); // Get current stage
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }

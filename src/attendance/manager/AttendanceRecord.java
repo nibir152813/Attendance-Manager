@@ -21,4 +21,3 @@ public class AttendanceRecord {
     public StringProperty teacherProperty() { return teacher; }
     public StringProperty courseProperty() { return course; }
 }
-

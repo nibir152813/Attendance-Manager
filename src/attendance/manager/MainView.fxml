@@ -9,20 +9,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #0cdeef;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.manager.StudentController">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.manager.StudentController">
     <children>
-        <Label layoutX="276.0" layoutY="35.0" text="Attendance Manager" textFill="WHITE">
+        <Label layoutX="276.0" layoutY="35.0" text="Attendance Manager">
          <font>
             <Font size="22.0" />
          </font></Label>
         
         <TextField fx:id="idField" layoutX="106.0" layoutY="145.0" promptText="Enter ID" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-        <TextField fx:id="nameField" layoutX="106.0" layoutY="195.0" promptText="Enter Name" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="nameField" layoutX="106.0" layoutY="194.0" promptText="Enter Name" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
         <TextField fx:id="courseField" layoutX="106.0" layoutY="244.0" promptText="Enter Course" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-        <Button layoutX="50.0" layoutY="354.0" onAction="#addStudent" style="-fx-background-color: #0598ff;" text="Add Student" textFill="WHITE" />
-        <Button layoutX="160.0" layoutY="353.0" onAction="#updateStudent" style="-fx-background-color: #0598ff;" text="Update Info" textFill="WHITE" />
+        <Button layoutX="45.0" layoutY="354.0" onAction="#addStudent" style="-fx-background-color: #0598ff;" text="Add Student" textFill="WHITE" />
+        <Button layoutX="164.0" layoutY="353.0" onAction="#updateStudent" style="-fx-background-color: #0598ff;" text="Update Info" textFill="WHITE" />
         <Button layoutX="30.0" layoutY="409.0" onAction="#addAttendance" prefHeight="18.0" prefWidth="112.0" style="-fx-background-color: #0598ff;" text="Add Attendance" textFill="WHITE" />
-        <Button layoutX="152.0" layoutY="410.0" onAction="#deleteStudent" style="-fx-background-color: #0598ff;" text="Delete Student" textFill="WHITE" />
+        <Button layoutX="158.0" layoutY="410.0" onAction="#deleteStudent" style="-fx-background-color: #0598ff;" text="Delete Student" textFill="WHITE" />
         
         <TableView fx:id="studentsTable" focusTraversable="false" layoutX="307.0" layoutY="120.0" prefHeight="338.0" prefWidth="322.0">
             <columns>
@@ -32,9 +32,9 @@
                 <TableColumn fx:id="attendanceColumn" prefWidth="88.79998779296875" text="Attendance" />
             </columns>
         </TableView>
-      <Text fill="WHITE" layoutX="56.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
-      <Text fill="WHITE" layoutX="53.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
-      <Text fill="WHITE" layoutX="53.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course :" />
-      <Button layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#gototeachers" text="Course Teachers" />
+      <Text layoutX="56.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
+      <Text layoutX="53.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
+      <Text layoutX="53.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course :" />
+      <Button layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#gototeachers" style="-fx-background-color: #0598ff;" text="Course Teachers" textFill="WHITE" />
     </children>
 </AnchorPane>
