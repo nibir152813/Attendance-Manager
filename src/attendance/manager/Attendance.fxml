@@ -18,11 +18,11 @@
         </columns>
     </TableView>
 
-    <Label layoutX="83.0" layoutY="148.0" text="ID:" />
-    <TextField fx:id="txtId" layoutX="132.0" layoutY="145.0" promptText="Enter ID" />
+    <Label layoutX="83.0" layoutY="153.0" text="ID:" />
+    <TextField fx:id="txtId" layoutX="132.0" layoutY="145.0" promptText="Enter ID" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
 
     <Label layoutX="54.0" layoutY="200.0" text="Teacher:" />
-    <TextField fx:id="txtTeacher" layoutX="131.0" layoutY="195.0" promptText="Enter Name" />
+    <TextField fx:id="txtTeacher" layoutX="131.0" layoutY="195.0" promptText="Enter Name" style="-fx-background-color: tranparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
 
     <Label layoutX="25.0" layoutY="252.0" text="Course Name:" />
 
@@ -30,7 +30,7 @@
     <Button fx:id="btnUpdate" layoutX="135.0" layoutY="377.0" onAction="#updateRecord" style="-fx-background-color: #0598ff;" text="Update" textFill="WHITE" />
     <Button fx:id="btnDelete" layoutX="222.0" layoutY="377.0" onAction="#deleteRecord" style="-fx-background-color: #0598ff;" text="Delete" textFill="WHITE" />
    <Button layoutX="34.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBackButton" style="-fx-background-color: #0598ff;" text="Back" textFill="WHITE" />
-   <TextField fx:id="txtTeacher1" layoutX="131.0" layoutY="247.0" promptText="Enter Course" />
+   <TextField fx:id="txtCourse" layoutX="131.0" layoutY="247.0" promptText="Enter Course" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
    <Label layoutX="250.0" layoutY="28.0" prefHeight="42.0" prefWidth="208.0" text="Attendance Manager">
       <font>
          <Font size="22.0" />

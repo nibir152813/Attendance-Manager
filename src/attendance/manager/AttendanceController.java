@@ -19,6 +19,7 @@ public class AttendanceController {
     @FXML private TableColumn<AttendanceRecord, String> colCourse;
     @FXML
     private TextField txtId;
+    @FXML
     private TextField txtTeacher;
     @FXML
     private TextField txtCourse;
@@ -26,8 +27,6 @@ public class AttendanceController {
 
     private Connection conn;
     private ObservableList<AttendanceRecord> data;
-    @FXML
-    private TextField txtTeacher1;
 
     public void initialize() {
         connectDB();
