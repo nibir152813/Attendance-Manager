@@ -34,7 +34,7 @@ public class LoginController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Initialization logic if needed
+        
     }
 
     private void onLogin(ActionEvent event) {
@@ -42,14 +42,14 @@ public class LoginController implements Initializable {
 
     private void loadMainView(ActionEvent event) {
         try {
-            // Load the new FXML file
+            
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MainView.fxml"));
             Parent root = loader.load();
 
-            // Get the current stage
+            
             Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-            // Set the new scene
+            
             currentStage.setScene(new Scene(root));
             currentStage.setTitle("Main View");
             currentStage.show();
